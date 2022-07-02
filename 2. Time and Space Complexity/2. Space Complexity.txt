@@ -1,0 +1,11 @@
+int a; O(1) space
+int b = 5; O(1) space
+
+int n = 100; O(1) space
+int ar[n]; O(n) space
+
+
+int arr[n][n]; O(n^2) space
+
+// Overall Complexity
+O(1) + O(n) + O(n^2) == O(n^2)
