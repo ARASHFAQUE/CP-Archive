@@ -1,0 +1,76 @@
+***Time Complexity***
+
+
+O(N)+O(N) == O(N)
+
+O(K*N) == O(N) and if K << N (If K is a lot less than N)
+
+
+***On Online Programming websites***
+
+Number of ITERATIONS in 1 sec is: 10^7 to 10^8
+10^7 -> 1 sec
+10^8 -> 10 sec
+10^9 -> 100 sec
+10^10 -> 1000 sec(almost bigger than 15mins)
+10^11 -> 10000 sec
+
+
+***Examples***
+// N < 100000
+// a[i] < 100000
+
+
+O(N) Example:
+
+int n; //O(1)
+cin >> n; // O(1)
+for(int i = 0; i < n; ++i){ // O(n)
+    cin >> a[i];
+}
+// Overall complexity O(n)
+
+
+// O(N^2) Example:
+
+for(int i = 0; i < n; ++i){ // O(n)
+    for(int j = 0; j < n; ++j){ // O(n*n)
+
+    }
+}
+// Overall complexity O(n^2) will show TLE
+
+
+n < 10^5
+***O(Log(N)) Example***
+
+int n;
+cin >> n;
+while(n > 0){
+    n = n / 2;
+}
+
+
+
+
+*** Time Complexity which doesn't look N^2 ***
+for(int i = 0; i < n; ++i){ // O(n)
+    for(int j = 0; j < i; ++j){
+
+    }
+}
+
+// Inner loop runs ->
+0 + 1 + 2 + 3 + .... n
+
+= (n*(n+1))/2
+
+= O( (n^2)/2 + n / 2 )
+
+= O((n^2)/2) + O(n/2)
+
+= O((n^2)/2) // O(n/2) can be ignored because it is a child near (n^2)/2
+
+= O(n^2)
+
+// Overall Complexity O(n^2)
