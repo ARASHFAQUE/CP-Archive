@@ -1,0 +1,12 @@
+M = 10^9 + 7
+
+*** Modular Arithmetic Formulas ***
+1. (a + b) % M = ((a % M) + (b % M))% M
+
+2. (a * b) % M = ((a % M) * (b % M))% M
+
+3. (a - b) % M = ((a % M) - (b % M) + M)% M (Special Case of '-')
+
+4. (a / b) % M = ((a % M) * ((b^-1) % M))% M ** Important
+
+** b^-1 => Multiplicative Inverse
